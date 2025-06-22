@@ -1,0 +1,355 @@
+:root {
+  --primary-color: #c1c1c1;
+  --secondary-color: #FFFDF9;
+  --accent-color: 	#efb810;
+  --dark-color: #c1c1c1 ;
+  --light-gray: #f5f5f5;
+
+  --font-primary: 'Cormorant Garamond', serif;
+  --font-titles: 'Playfair Display', serif;
+  --font-body: 'Quicksand', sans-serif;
+}
+
+/* Reinicio básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--dark-color);
+  background-color: var(--light-gray);
+  background-image: url('../assets/fondo/fondo.jpg');
+  background-repeat: repeat;
+  background-size: auto;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-titles);
+}
+
+
+p, li, a, span {
+  font-family: var(--font-body);
+}
+
+.content-box {
+  background-color: rgba(244, 239, 234, 0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  width: min(80%, 900px);
+}
+
+/* Contenedor fluido centrado para limitar ancho */
+.container {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+}
+
+.fondos-principal{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* =====================
+   ENCABEZADO FIJO & NAVEGACIÓN
+   ===================== */
+.site-header {
+  height: 75px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem; /* ✅ espaciado interior para que no quede pegado */
+  box-sizing: border-box; /* ✅ evita que el padding afecte el ancho total */
+}
+
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+}
+
+/* Brand (logo + nombre) */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-logo {
+  width: 100px;
+  height: auto;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--font-titles);
+}
+
+/* NavBar */
+.navbar {
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu a {
+  color: #006bcc;
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+}
+
+/* Subrayado animado */
+.menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* Enlaces en títulos sin estilos visitados */
+h1 a, h2 a, h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited {
+  color: inherit;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover {
+  color: #006bcc; 
+}
+
+/* =====================
+   HERO SECTIONS (más altas para Spa y demás)
+   ===================== */
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.hero-inner {
+  padding: 4rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-inline: auto;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Sustituye las rutas por imágenes reales */
+.hero-facial  { background-image: url('../lago imagenes/facial/limpieza-facial.jpg'); }
+.hero-corporal{ background-image: url('../lago imagenes/Principal/corporalPrincipal.avif'); }
+.hero-salud   { background-image: url('../lago imagenes/Principal/saludPrincipal.jpg'); }
+.hero-spa     { background-image: url('../lago imagenes/Principal/sauna.jpg'); }
+
+* {
+  box-sizing: border-box;
+}
+
+section,
+.hero,
+.content,
+.texto,
+.contenedor-texto {
+  padding: 0 1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+/* =====================
+   PIE DE PÁGINA
+   ===================== */
+footer {
+  background-color: var(--dark-color);
+  color: #006bcc;
+  padding: 2rem 1rem;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+footer h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-family: var(--font-titles);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li a {
+  color: #006bcc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: var(--accent-color);
+}
+
+footer .copyright {
+  text-align: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+}
+
+/*  menu movil  */
+
+@media (max-width: 768px) {
+
+  .sr-only{
+    color: #006bcc;
+  }
+
+  .site-header {
+    position: sticky;
+    padding: 0.5rem 1rem;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .brand-logo {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .nav-toggle {
+    margin-left: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navbar {
+    position: relative;
+    width: 100%;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: auto;
+    width: 200px;
+    background-color: var(--primary-color);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    border-radius: 0 0 0 0.5rem;
+    /*box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);*/
+    z-index: 999;
+  }
+
+  .site-header .container {
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0 1rem;
+  }
+  .menu.open {
+    display: flex;
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu a {
+    color: #006bcc;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu a:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+  }
+
+  body,
+  .site-header,
+  .container {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+}

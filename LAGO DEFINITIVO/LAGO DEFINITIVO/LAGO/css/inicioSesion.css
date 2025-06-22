@@ -1,0 +1,64 @@
+
+
+.hero-inner h1 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  color: #676766;
+  margin-bottom: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero-inner input[type="text"],
+.hero-inner input[type="password"] {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.hero-inner input:focus {
+  outline: none;
+  border-color: #A8C5A1;
+}
+
+.hero-inner button {
+  background-color: #676766;
+  color: #FFFDF9;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-inner button:hover {
+  background-color: #515151;
+}
+
+.content-box {
+  background-color: rgba(244, 239, 234, 0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  width: min(90%, 480px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .hero-inner.container {
+    padding: 2rem 1rem;
+  }
+
+  .hero-inner h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-inner input,
+  .hero-inner button {
+    font-size: 14px;
+  }
+}

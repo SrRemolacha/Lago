@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../lago imagenes/Principal/icono.jpg" type="image/jpg">
+  <title>Lago · Clínica de Belleza Integral</title>
+  <link rel='stylesheet' href='../css/styles-responsive.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;600&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Encabezado fijo con espacio para logotipo -->
+  <header class='site-header'>
+    <div class='container flex-between'>
+      <a href='#' class='brand'>
+        <!-- Sustituye el src por tu archivo de logo -->
+        <img src='../assets/encabezado/encabezado.png' alt='Lago' class='brand-logo'>
+      </a>
+      <!-- Navegación principal -->
+      <nav class='navbar' aria-label='Navegación principal'>
+        <!-- Botón hamburguesa visible en móviles -->
+        <button class='nav-toggle' aria-controls='menu' aria-expanded='false'>
+          ☰
+          <span class='sr-only'>Menú</span>
+        </button>
+        <ul id='menu' class='menu'>
+          <li><a href='FACIAL.html'>Facial</a></li>
+          <li><a href='CORPORAL.html'>Corporal</a></li>
+          <li><a href='SALUD.html'>Salud</a></li>
+          <li><a href='SPA.html'>Spa</a></li>
+          <li><a href='InicioSesion.html'>Inicio Sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <section id='facial' class='hero hero-facial content-box'>
+      <div class='hero-inner container fondos-principal'>
+        <h1><a href='FACIAL.html'>Bienestar y Belleza Facial</a></h1>
+        <p>Descubre nuestros tratamientos personalizados para el cuidado de tu piel.</p>
+      </div>
+    </section>
+
+    <section id='corporal' class='hero hero-corporal content-box'>
+      <div class='hero-inner container fondos-principal'>
+        <h1><a href='CORPORAL.html'>Tratamientos Corporales</a></h1>
+        <p>Moldea, tonifica y cuida tu cuerpo con la última tecnología.</p>
+      </div>
+    </section>
+
+    <section id='salud' class='hero hero-salud content-box'>
+      <div class='hero-inner container fondos-principal'>
+        <h1><a href='SALUD.html'>Salud y Medicina Alternativa</a></h1>
+        <p>Prueba una forma diferente para renovar tu cuerpo de forma natural.</p>
+      </div>
+    </section>
+
+    <section id='spa' class='hero hero-spa content-box'>
+      <div class='hero-inner container fondos-principal'>
+        <h1><a href='SPA.html'>Spa & Relax</a></h1>
+        <p>Espacios pensados para desconexión total y renovación.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class='container grid-footer'>
+      <div class='location'>
+        <h3>Ubicación</h3>
+        <p>calle 14 INT 11-88 sogamoso-boyaca </p>
+      </div>
+      <div class='social'>
+        <h3>Redes Sociales</h3>
+        <ul>
+          <li><a href='https://www.facebook.com/profile.php?id=61577780604356&mibextid=wwXIfr&rdid=lVW8O0RAfy2VAGNs&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1J1oF1zd4a%2F%3Fmibextid%3DwwXIfr'>Facebook</a></li>
+          <li><a href='https://www.instagram.com/lagospaesteticasalud'>Instagram</a></li>
+
+        </ul>
+      </div>
+      <div class='contact'>
+        <h3>Contacto</h3>
+        <ul>
+          <li>+57 3113118625</li>
+          <li>+57 3143411955</li>
+          <li>+57 3135105205</li>
+        </ul>
+      </div>
+    </div>
+    <div class='copyright'>
+      © 2025 Lago. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <!-- Script para control del menú móvil -->
+<script src="../js/menu-toggle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lago · Inicio de Sesión</title>
+  <link rel='stylesheet' href='../css/styles-responsive.css'>
+  <link rel='stylesheet' href='../css/inicioSesion.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;600&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+    <div class="container flex-between">
+      <a href="principal.html" class="brand">
+        <img src="../assets/encabezado/encabezado.png" alt="Lago" class="brand-logo">
+      </a>
+      <nav class="navbar" aria-label="Navegación principal">
+        <button class="nav-toggle" aria-controls="menu" aria-expanded="false">☰<span class="sr-only">Menú</span></button>
+        <ul id="menu" class="menu">
+          <li><a href="facial.html" class="active">Facial</a></li>
+          <li><a href="CORPORAL.html">Corporal</a></li>
+          <li><a href="SALUD.html">Salud</a></li>
+          <li><a href="SPA.html">Spa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section id='facial' class='content-box'>
+        <div class='hero-inner container'>
+            <h1>Ingreso Administrativo</h1>
+            <input class="formulario" type="text" id="usuario" placeholder="Usuario"><br>
+            <input class="formulario" type="password" id="contrasena" placeholder="Contraseña"><br>
+            <button onclick="verificar()">Entrar</button>
+        </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class='container grid-footer'>
+        <div class='location'>
+            <h3>Ubicación</h3>
+            <p>calle 14 INT 11-88 sogamoso-boyaca </p>
+        </div>
+        <div class='social'>
+            <h3>Redes Sociales</h3>
+            <ul>
+            <li><a href='https://www.facebook.com/profile.php?id=61577780604356&mibextid=wwXIfr&rdid=lVW8O0RAfy2VAGNs&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1J1oF1zd4a%2F%3Fmibextid%3DwwXIfr'>Facebook</a></li>
+            <li><a href='https://www.instagram.com/lagospaesteticasalud'>Instagram</a></li>
+
+            </ul>
+        </div>
+        <div class='contact'>
+            <h3>Contacto</h3>
+            <ul>
+          <li>+57 3113118625</li>
+          <li>+57 3143411955</li>
+          <li>+57 3135105205</li>
+        </ul>
+        </div>
+        </div>
+        <div class='copyright'>
+        © 2025 Lago. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="../js/menu-toggle.js"></script>
+    <script src="../js/sesion.js"></script>
+</body>
+</html>
