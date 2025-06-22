@@ -188,7 +188,7 @@ h3 a:hover {
   font-size: 1.2rem;
   max-width: 600px;
   margin-inline: auto;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Sustituye las rutas por imágenes reales */
